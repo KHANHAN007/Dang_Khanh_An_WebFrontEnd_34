@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Ex02.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Task Management</h2>
+        <div class="form-container">
+            <input type="text" name="" id="content" placeholder="Content">
+            <input type="date" name="" id="dueDate">
+            <select name="" id="status">
+                <option value="Pending">Pending</option>
+                <option value="completed">completed</option>
+            </select>
+            <input type="text" name="" id="assignedTo" placeholder="Username">
+            <button onclick="addTask()">Submit</button>
+        </div>
+        <table>
+            <thead>
+                <th>#</th>
+                <th>Content</th>
+                <th>Due date</th>
+                <th>Status</th>
+                <th>Assigned to</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="taskTableBody">
+
+            </tbody>
+        </table>
+        <script src="Ex02.js"></script>
+    </div>
+</body>
+
+</html>
